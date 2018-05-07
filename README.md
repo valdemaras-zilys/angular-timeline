@@ -21,7 +21,7 @@ Install dependencies.
 
 `npm install`
 
-## Coding standard test
+## Running coding standard check
 
 Run `ng lint` or `npm run lint` to execute coding standard check.
 
@@ -32,3 +32,7 @@ Run `ng test` or `npm test` to execute the unit tests via [Karma](https://karma-
 ## Running end-to-end tests
 
 Run `ng e2e` or `npm run e2e`to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Running application
+
+Run `ng serve` or `ng serve --open` to open applicaion in browser automatically. Use `--port` option to provide different port.
