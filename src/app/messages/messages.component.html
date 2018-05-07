@@ -1,0 +1,4 @@
+<div *ngIf="(messageService.successMessages.length || messageService.errorMessages.length)" id="message-container">
+  <div *ngFor='let message of messageService.successMessages' class="message success"> {{message}} </div>
+  <div *ngFor='let message of messageService.errorMessages' class="message error"> {{message}} </div>
+</div>

@@ -1,0 +1,25 @@
+.post.container{
+    display: block;
+    width: 90%;
+    border: 1px solid lightgrey;
+    margin-bottom: 5px;
+    
+}
+.post.container .message{
+    display:inline-block;
+    width: 80%;
+    word-wrap: break-word;
+    min-height: 50px;
+    white-space: pre-line;
+}
+.post.container .controls{
+    display: inline-block;
+    width: 20%;
+}
+.post.container .controls button{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 0;
+    padding: 5px;
+}

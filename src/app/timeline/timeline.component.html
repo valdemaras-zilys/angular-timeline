@@ -1,0 +1,9 @@
+<app-post-form></app-post-form>
+
+<div *ngFor='let post of posts' class="post container">
+  <div class="message"> <p>{{post.message}}</p> </div>
+  <div class="controls">
+    <p>{{post.submitedAt | timeAgo}}</p>
+    <button (click)="deletePost(post)">Delete</button>
+  </div>
+</div>

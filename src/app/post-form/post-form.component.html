@@ -1,0 +1,19 @@
+<div class="container">
+  <form [formGroup]="postForm">
+    <div class="form-group">
+      <textarea id="postMessage" class="form-control" formControlName="message" required ng-trim=true></textarea>
+      <div *ngIf="message.invalid && (message.dirty || message.touched)" class="alert alert-danger">
+        <div *ngIf="message.errors.required">
+          Ups... Looks like field is empty. Please add some text.
+        </div>
+        <div *ngIf="message.errors.minlength">
+          Message must be at least few characters long.
+        </div>
+        <div *ngIf="message.errors.maxlength">
+          Ups. It seems you have a lot to share. But only 150 characters can be accepted.
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-default" [disabled]="postForm.invalid" (click)="onSubmit()">Submit post</button>
+  </form>
+</div>
